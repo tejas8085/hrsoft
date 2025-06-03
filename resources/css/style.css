@@ -1,0 +1,30 @@
+/* resources/css/style.css */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.d-flex {
+    min-height: 100vh;
+}
+
+.bg-dark {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.bg-dark ul li a {
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.bg-dark ul li a:hover {
+    background-color: #444;
+}
