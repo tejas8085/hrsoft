@@ -7,7 +7,7 @@
         <input type="text" name="name" class="form-control" placeholder="Filter by Name" value="{{ request('name') }}">
         <button type="submit" class="btn btn-primary">Search</button>
     </form>
-    
+
     <a href="{{ route('employee.create') }}" class="btn btn-success">+ Add Employee</a>
 </div>
 
@@ -26,18 +26,18 @@
         <tr>
             <td>{{ $employee->id }}</td>
             <td>
-    <a href="{{ route('employee.show', $employee->id) }}" style="text-decoration: none; color: inherit;"
-   onmouseover="this.style.fontWeight='bold'; this.style.textDecoration='underline';"
-   onmouseout="this.style.fontWeight='normal'; this.style.textDecoration='none';">
-        {{ $employee->name }}
-    </a>
-</td>
+                <a href="{{ route('employee.show', $employee->id) }}" style="text-decoration: none; color: inherit;"
+                    onmouseover="this.style.fontWeight='bold'; this.style.textDecoration='underline';"
+                    onmouseout="this.style.fontWeight='normal'; this.style.textDecoration='none';">
+                    {{ $employee->name }}
+                </a>
+            </td>
 
             <td>{{ $employee->designation }}</td>
             <td>{{ $employee->joining_date }}</td>
             <td>{{ $employee->department }}</td>
 
-            
+
         </tr>
         @empty
         <tr>
